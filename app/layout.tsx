@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/common/ThemeProviders";
+import { ViewTransitions } from "next-view-transitions";
+import { LenisProvider } from "@/components/common/LenisProviders";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const hanken = Hanken_Grotesk({
+  variable: "--font-hanken-grotesk",
+  weight: "500",
 });
 
 const geistMono = Geist_Mono({
@@ -23,12 +31,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`
+    ${geistSans.variable} ${geistSans.className}
+    ${geistMono.variable} ${geistMono.className}
+    ${hanken.variable}   ${hanken.className}
+    antialiased
+  `}
+        >
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <LenisProvider>{children}</LenisProvider>
+          </ThemeProvider>
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

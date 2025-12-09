@@ -132,3 +132,14 @@ export const socialLinks = [
     icon: <Mail />,
   },
 ];
+
+export const experience = [
+  {
+    name: "Xyz",
+    role: "Frontend developer",
+    duration: "Des-2024-Mar-25",
+    logo: "React.svg",
+    detail:
+      "Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
+  },
+];

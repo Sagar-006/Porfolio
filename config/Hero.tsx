@@ -135,11 +135,30 @@ export const socialLinks = [
 
 export const experience = [
   {
-    name: "Xyz",
+    company: "Xyz",
     role: "Frontend developer",
-    duration: "Des-2024-Mar-25",
+    date: "Des-2024-Mar-25",
     logo: "React.svg",
-    detail:
+    description:
+      "Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
+  },
+  {
+    company: "Abc",
+    role: "Frontend developer",
+    date: "Des-2024-Mar-25",
+    logo: "React.svg",
+    description:
       "Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
   },
 ];
+
+export const projects = [
+  {
+    projectname:'Nex-Store',
+    link:'',
+    github:'',
+    description:'abc',
+    technologies:
+
+  }
+]

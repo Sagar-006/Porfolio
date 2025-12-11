@@ -2,7 +2,7 @@ import { About } from "../Landing/About";
 import { TechStack } from "../Landing/TechStack";
 import { Skills } from "../Landing/Skills";
 import { Experience } from "../Landing/Experience";
-import { Projects } from "../Landing/Projects";
+import Projects from "../Landing/Projects";
 
 export function Right (){
     return (

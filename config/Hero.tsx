@@ -154,11 +154,35 @@ export const experience = [
 
 export const projects = [
   {
-    projectname:'Nex-Store',
-    link:'',
-    github:'',
-    description:'abc',
-    technologies:
-
-  }
-]
+    projectname: "Nex-Store",
+    image: "abc",
+    link: "https://github.com/Sagar-006",
+    github: "https://github.com/Sagar-006",
+    description: "abc",
+    technologies: [<Github />, <Mail />, <X />],
+  },
+  {
+    projectname: "Nex-Store",
+    image: "abc",
+    link: "https://github.com/Sagar-006",
+    github: "https://github.com/Sagar-006",
+    description: "abc",
+    technologies: [<Github />, <Mail />, <X />],
+  },
+  {
+    projectname: "Nex-Store",
+    image: "abc",
+    link: "https://github.com/Sagar-006",
+    github: "https://github.com/Sagar-006",
+    description: "abc",
+    technologies: [<Github />, <Mail />, <X />],
+  },
+  {
+    projectname: "Nex-Store",
+    image: "abc",
+    link: "https://github.com/Sagar-006",
+    github: "https://github.com/Sagar-006",
+    description: "abc",
+    technologies: [<Github />, <Mail />, <X />],
+  },
+];

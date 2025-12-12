@@ -22,7 +22,7 @@ export function ExperienceCard({
 }) {
   return (
     <AccordionItem value={experienceData.company} className="border-none">
-      <Card className="rounded-xl border border-gray-200 shadow-sm bg-white">
+      <Card className="rounded-xl border border-dashed border-gray-200 shadow-sm bg-white">
         <AccordionTrigger className="flex items-center justify-between p-4 cursor-pointer">
           <div className="flex items-center gap-3">
             <Image

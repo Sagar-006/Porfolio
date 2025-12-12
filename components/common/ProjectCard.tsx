@@ -2,6 +2,8 @@ import Image from "next/image";
 import { BorderBeam } from "../Ui/border-beam";
 import { Heading } from "../Ui/Heading";
 import Link from "next/link";
+import { FiLink, FiGithub } from "react-icons/fi";
+
 
 type projectData = {
   projectname: string;
@@ -19,7 +21,7 @@ export function ProjectCard({ projectData }: { projectData: projectData }) {
 
       <div className="flex flex-col gap-y-2 relative z-10">
         {/* IMAGE */}
-        <div className="w-full h-[120px] border border-red-500">
+        <div className="w-full h-[120px] border ">
           <Image
             src={projectData.image}
             alt={projectData.projectname}
@@ -30,19 +32,30 @@ export function ProjectCard({ projectData }: { projectData: projectData }) {
         </div>
 
         {/* TEXT */}
-        <h1 className="font-semibold">{projectData.projectname}</h1>
+        <div className="flex border  items-center justify-between">
+          <h1 className="font-semibold text-black">
+            {projectData.projectname}
+          </h1>
+          <div className="flex gap-x-2 mr-4">
+            <Link href={projectData.link}>
+              <FiLink />
+            </Link>
+            <Link href={projectData.link}>
+              <FiGithub />
+            </Link>
+          </div>
+        </div>
+        <p className="text-sm text-gray-600">{projectData.description}</p>
 
-        <p className="text-sm">{projectData.description}</p>
-
-        <Link href={projectData.link}>
-          <Heading className="px-3 border border-gray-300 py-0.5 text-sm text-gray-700">
-            Click here
+        {/* <Link href={projectData.link} className="flex">
+          <Heading className="px-3 border flex items-center gap-x-2 border-gray-300 py-0.5 text-sm text-gray-700">
+            Live <span className="text-xs"></span>
           </Heading>
-        </Link>
+        </Link> */}
 
         {/* TECHNOLOGIES */}
         <div>
-          <p className="text-sm">Technologies</p>
+          <p className="text-sm text-gray-600">Technologies</p>
 
           <div className="flex gap-2">
             {projectData.technologies.map((TechIcon, index) => (

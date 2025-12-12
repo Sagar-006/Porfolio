@@ -12,7 +12,7 @@ export function Experience() {
       </Heading>
 
       {/* WRAP ALL ExperienceCards INSIDE ACCORDION */}
-      <Accordion type="single" collapsible className="flex flex-col gap-4">
+      <Accordion type="single" collapsible className="flex flex-col gap-4 ">
         {experience.map((m, index) => (
           <ExperienceCard key={index} experienceData={m} />
         ))}

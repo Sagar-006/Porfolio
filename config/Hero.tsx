@@ -182,7 +182,7 @@ export const projects = [
     image: "/images/profile.avif",
     link: "https://github.com/Sagar-006",
     github: "https://github.com/Sagar-006",
-    description: "A sleek and responsive landing page designed for modern startups to showcase their products effectively.",
+    description: "A dynamic, animation-focused landing page highlighting creative transitions and interactive elements.",
     technologies: [<Github />, <Mail />, <X />],
   },
 ];

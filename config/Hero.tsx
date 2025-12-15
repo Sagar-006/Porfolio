@@ -27,6 +27,14 @@ import Github from "@/components/svgs/Github";
 // import LinkedIn from "@/components/svgs/LinkedIn";
 import Mail from "@/components/svgs/Mail";
 import X from "@/components/svgs/X";
+import { IoLogoGithub } from "react-icons/io";
+import { FaXTwitter } from "react-icons/fa6";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaDiscord } from "react-icons/fa";
+
+
+
+
 
 // import Bun from "@/components/technologies/Bun";
 // import JavaScript from "@/components/technologies/JavaScript";
@@ -237,9 +245,7 @@ export const education = [
 
 export const links = [
   {
-    logo: (
-      <Github  />
-    ),
+    logo: <Mail/>,
     link: "https://github.com/Sagar-006",
   },
   {
@@ -252,6 +258,41 @@ export const links = [
   },
   {
     logo: <Github />,
+    link: "https://github.com/Sagar-006",
+  },
+  {
+    logo: <Github />,
+    link: "https://github.com/Sagar-006",
+  },
+  {
+    logo: <Github />,
+    link: "https://github.com/Sagar-006",
+  },
+];
+export const social = [
+  {
+    name: "Github",
+    logo: <IoLogoGithub className="w-7 h-7 text-black dark:text-white" />,
+    link: "https://github.com/Sagar-006",
+  },
+  {
+    name: "X",
+    logo: <FaXTwitter className="w-7 h-7 text-black dark:text-white" />,
+    link: "https://github.com/Sagar-006",
+  },
+  {
+    name: "G-Mail",
+    logo: <Mail className="object-cover" />,
+    link: "https://github.com",
+  },
+  {
+    name: "Linkedin",
+    logo: <IoLogoLinkedin className="w-7 h-7 text-black dark:text-white" />,
+    link: "https://github.com/Sagar-006",
+  },
+  {
+    name: "Discord",
+    logo: <FaDiscord className="w-7 h-7 text-black dark:text-white" />,
     link: "https://github.com/Sagar-006",
   },
 ];
@@ -276,3 +317,37 @@ export const skills = [
     title: "Marketing",
   },
 ];
+
+export const techstack = [
+  {
+    name: "React",
+    src: "/nextjs.svg",
+  },
+  {
+    name: "Tailwind",
+    src: "/tailwind.svg",
+  },
+  {
+    name: "Ts",
+    src: "/TS.png",
+  },
+  {
+    name: "Postgresql",
+    src: "/postgresql.svg",
+  },
+  {
+    name: "figma",
+    src: "/Figma-logo.svg",
+  },
+  {
+    name: "nodejs",
+    src: "/nodejs-icon.svg",
+  },
+];
+  
+// <Image src="/nextjs.svg" alt="React" width={40} height={40} />
+// <Image src="/tailwind.svg" alt="React" width={40} height={40} />
+// <Image src="/TS.png" alt="React" width={40} height={40} />
+// <Image src="/postgresql.svg" alt="React" width={40} height={40} />
+// <Image src="/Figma-logo.svg" alt="React" width={25} height={25} />
+// <Image src="/nodejs-icon.svg" alt="React" width={40} height={40} />

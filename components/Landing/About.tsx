@@ -21,11 +21,11 @@ export function About(){
           intersection of visual design and technical implementation.
         </p>
 
-        <p className="  text-black dark:bg-black dark:text-white  text-[16px]">
+        {/* <p className="  text-black dark:bg-black dark:text-white  text-[16px]">
           With over 5 years of experience in creating visually stunning and
           user-centric websites, I've honed my skills in both front-end and
           back-end development.
-        </p>
+        </p> */}
       </Container>
     );
 }

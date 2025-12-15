@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "../common/Container";
 import { Heading } from "../Ui/Heading";
+import { techstack } from "@/config/Hero";
 
 export function TechStack() {
   return (
@@ -9,13 +10,18 @@ export function TechStack() {
         TECH STACK
       </Heading>
 
-      <div className=" flex justify-between ">
-        <Image src="/nextjs.svg" alt="React" width={40} height={40} />
-        <Image src="/tailwind.svg" alt="React" width={40} height={40} />
-        <Image src="/TS.png" alt="React" width={40} height={40} />
-        <Image src="/postgresql.svg" alt="React" width={40} height={40} />
-        <Image src="/Figma-logo.svg" alt="React" width={25} height={25} />
-        <Image src="/nodejs-icon.svg" alt="React" width={40} height={40} />
+      <div className=" flex justify-between items-center">
+        {techstack.map((t, index) => (
+          <div key={index} className="w-10 h-10 relative  flex items-center justify-center">
+            <Image
+              src={t.src}
+              alt={t.name}
+              fill
+              className="object-contain  transition-transform duration-300 ease-out hover:scale-110 cursor-grab"
+              sizes="40px"
+            />
+          </div>
+        ))}
       </div>
     </Container>
   );

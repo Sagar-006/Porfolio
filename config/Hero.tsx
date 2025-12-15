@@ -27,6 +27,7 @@ import Github from "@/components/svgs/Github";
 // import LinkedIn from "@/components/svgs/LinkedIn";
 import Mail from "@/components/svgs/Mail";
 import X from "@/components/svgs/X";
+
 // import Bun from "@/components/technologies/Bun";
 // import JavaScript from "@/components/technologies/JavaScript";
 // import MongoDB from "@/components/technologies/MongoDB";
@@ -231,5 +232,47 @@ export const education = [
     logo: "nextjs.svg",
     description:
       "Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
+  },
+];
+
+export const links = [
+  {
+    logo: (
+      <Github  />
+    ),
+    link: "https://github.com/Sagar-006",
+  },
+  {
+    logo: <Mail />,
+    link: "https://github.com/Sagar-006",
+  },
+  {
+    logo: <X />,
+    link: "https://github.com/Sagar-006",
+  },
+  {
+    logo: <Github />,
+    link: "https://github.com/Sagar-006",
+  },
+];
+
+export const skills = [
+  {
+    title: "Web Design",
+  },
+  {
+    title: "Front-end development",
+  },
+  {
+    title: "Web Animations",
+  },
+  {
+    title: "Full-stack development",
+  },
+  {
+    title: "Copywriting",
+  },
+  {
+    title: "Marketing",
   },
 ];

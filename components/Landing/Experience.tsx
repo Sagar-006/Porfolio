@@ -6,8 +6,8 @@ import { Accordion } from "../Ui/accordion";
 
 export function Experience() {
   return (
-    <Container className="border p-0 flex flex-col gap-y-8 pt-2 text-lg">
-      <Heading className="px-3 border border-gray-300 py-0.5 text-sm text-gray-900">
+    <Container className=" p-0 flex flex-col gap-y-8 pt-2 text-lg">
+      <Heading className="px-3 border bg-white  text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 py-0.5 text-sm ">
         Experience
       </Heading>
 

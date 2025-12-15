@@ -5,7 +5,7 @@ import { heroConfig } from "@/config/Hero";
 export function Hero() {
   const { name, title, avatar, skills, description, buttons } = heroConfig;
   return (
-    <Container className="mx-auto max-w-5xl border-2 border-red-400 flex flex-col">
+    <Container className="mx-auto max-w-5xl flex flex-col">
       {/* <Image src={avatar} alt="hero" width={100} height={100}/> */}
       
       <div className="mt-8 flex flex-col gap-2">

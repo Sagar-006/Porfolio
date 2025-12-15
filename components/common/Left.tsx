@@ -5,11 +5,13 @@ import { FiSmartphone } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { Button } from "../Ui/Button";
 import { TbWorld } from "react-icons/tb";
+import { AnimatedThemeToggler } from "../Ui/animated-theme-toggler";
+import { AnimatedThemeTogglerDemo } from "./AnimatedThemerTogglerDemo";
 
 export function Left(){
     return (
       <div className="border-0 rounded-2xl  tracking-tighter leading-tight flex flex-col gap-y-2 items-center">
-        <div className="bg-white flex flex-col gap-y-3 p-2  w-[230px] rounded-xl border ">
+        <div className="  bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 flex flex-col gap-y-3 p-2  w-[230px] rounded-xl border ">
           <div className=" text-center  w-full flex px-1">
             <Image
               className="rounded-lg object-cover h-50"
@@ -25,7 +27,7 @@ export function Left(){
           <p className="text-md px-1">
             Web Designer,Content <br /> Creator & writer.
           </p>
-          <Heading className=" border text-gray-800 py-1 px-3 flex text-sm ">
+          <Heading className=" border bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 py-1 px-3 flex text-sm ">
             Available for work.
           </Heading>
           <div className="flex item-center text-sm gap-x-1 px-1">
@@ -33,7 +35,7 @@ export function Left(){
             <span>Pune,Maharashtra</span>
           </div>
         </div>
-        <div className="bg-white flex flex-col gap-y-3 px-2 py-2 w-[230px] rounded-xl h-[190px]">
+        <div className=" border  bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 flex flex-col gap-y-3 px-2 py-2 w-[230px] rounded-xl h-[190px]">
           <div className="text-sm flex items-center gap-x-1">
             <TbWorld />
             <p>InstantDesign.com</p>
@@ -46,15 +48,15 @@ export function Left(){
             <AiOutlineMail />
             <p>sagarbiradar7030@gmail.com</p>
           </div>
-          <div className="flex flex-col items-center border ">
+          <div className="flex flex-col items-center  ">
             <Button
               variant={"default"}
-              className="bg-white text-gray-800 border border-gray-300 hover:bg-white cursor-pointer w-46"
+              className="bg-white border text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 cursor-pointer w-46"
               size={"lg"}
             >
               Download CV
             </Button>
-            <Button className="w-46" variant={"secondary"} size={"lg"}>
+            <Button className="w-46 " variant={"secondary"} size={"lg"}>
               Contact Me
             </Button>
           </div>

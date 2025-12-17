@@ -5,7 +5,7 @@ import { Heading } from "../Ui/Heading";
 export function Skills (){
     return (
       <Container className=" p-0 flex flex-col gap-y-8 pt-2 text-lg">
-        <Heading className="px-3 py-0.5 text-sm bg-white border text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 ">
+        <Heading className="px-3 py-0.5 text-sm bg-gray-100 border text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 ">
           SKILLS
         </Heading>
         <div className="flex gap-x-8 gap-y-4   flex-wrap  ">

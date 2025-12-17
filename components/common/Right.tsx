@@ -5,6 +5,7 @@ import { Experience } from "../Landing/Experience";
 import Projects from "../Landing/Projects";
 import { Education } from "../Landing/Education";
 import { Links } from "../Landing/Links";
+import { Quote } from "../Landing/Quote";
 
 export function Right (){
     return (
@@ -18,6 +19,7 @@ export function Right (){
           <Projects/>
           <Education/>
           <Links/>
+          <Quote/>
           
         </div>
       </div>

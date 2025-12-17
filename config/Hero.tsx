@@ -30,10 +30,9 @@ import X from "@/components/svgs/X";
 import { IoLogoGithub } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { IoMail } from "react-icons/io5";
+import { RiNextjsFill } from "react-icons/ri";
 import { FaDiscord } from "react-icons/fa";
-
-
-
 
 
 // import Bun from "@/components/technologies/Bun";
@@ -282,7 +281,7 @@ export const social = [
   },
   {
     name: "G-Mail",
-    logo: <Mail className="object-cover" />,
+    logo: <IoMail className="object-cover w-7 h-7 text-black dark:text-white" />,
     link: "https://github.com",
   },
   {
@@ -345,9 +344,3 @@ export const techstack = [
   },
 ];
   
-// <Image src="/nextjs.svg" alt="React" width={40} height={40} />
-// <Image src="/tailwind.svg" alt="React" width={40} height={40} />
-// <Image src="/TS.png" alt="React" width={40} height={40} />
-// <Image src="/postgresql.svg" alt="React" width={40} height={40} />
-// <Image src="/Figma-logo.svg" alt="React" width={25} height={25} />
-// <Image src="/nodejs-icon.svg" alt="React" width={40} height={40} />

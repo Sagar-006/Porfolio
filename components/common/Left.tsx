@@ -5,8 +5,11 @@ import { FiSmartphone } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { Button } from "../Ui/Button";
 import { TbWorld } from "react-icons/tb";
+import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineLocationOn } from "react-icons/md";
 import { AnimatedThemeToggler } from "../Ui/animated-theme-toggler";
 import { AnimatedThemeTogglerDemo } from "./AnimatedThemerTogglerDemo";
+import { AvailabilityBadge } from "../Ui/availabilityBadge";
 
 export function Left(){
     return (
@@ -27,11 +30,12 @@ export function Left(){
           <p className="text-md px-1">
             Web Designer,Content <br /> Creator & writer.
           </p>
-          <Heading className=" border bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 py-1 px-3 flex text-sm ">
+          {/* <Heading className=" border bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 py-1 px-3 flex text-sm ">
             Available for work.
-          </Heading>
+          </Heading> */}
+          <AvailabilityBadge/>
           <div className="flex item-center text-sm gap-x-1 px-1">
-            <FaLocationDot className="text-gray-600 " />{" "}
+            <MdOutlineLocationOn />{" "}
             <span>Pune,Maharashtra</span>
           </div>
         </div>

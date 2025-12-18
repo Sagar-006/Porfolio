@@ -5,7 +5,6 @@ import { Accordion } from "../Ui/accordion";
 import { projects } from "@/config/Hero";
 import { ProjectCard } from "../common/ProjectCard";
 
-
 export default function Projects() {
   return (
     <Container className=" p-0 flex flex-col pb-2   gap-y-8 pt-2 text-lg">
@@ -15,8 +14,7 @@ export default function Projects() {
       <Accordion
         type="single"
         collapsible
-        className="flex flex-wrap flex-row gap-4"
-      >
+        className="flex flex-wrap flex-row gap-4">
         {projects.map((p, index) => (
           <ProjectCard projectData={p} key={index} />
         ))}

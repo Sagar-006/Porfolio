@@ -1,4 +1,4 @@
-import { education, experience } from "@/config/Hero";
+import { education } from "@/config/Hero";
 import { Container } from "../common/Container";
 import { Accordion } from "../Ui/accordion";
 import { Heading } from "../Ui/Heading";

@@ -10,6 +10,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { AnimatedThemeToggler } from "../Ui/animated-theme-toggler";
 import { AnimatedThemeTogglerDemo } from "./AnimatedThemerTogglerDemo";
 import { AvailabilityBadge } from "../Ui/availabilityBadge";
+import { TypeAnime } from "./TypeAnime";
 
 export function Left(){
     return (
@@ -24,19 +25,22 @@ export function Left(){
               height={200}
             />
           </div>
-          <h1 className="text-[24px] px-1 font-semibold text-shadow-amber-50">
-            Hello I'm <br /> Sagar Biradar
-          </h1>
+          <div >
+            <h1 className="text-[24px] px-1 font-semibold text-shadow-amber-50 ">
+              Hello I'm <br/> <TypeAnime/>
+            </h1>
+            
+          </div>
+
           <p className="text-md px-1">
             Web Designer,Content <br /> Creator & writer.
           </p>
           {/* <Heading className=" border bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 py-1 px-3 flex text-sm ">
             Available for work.
           </Heading> */}
-          <AvailabilityBadge/>
+          <AvailabilityBadge />
           <div className="flex item-center text-sm gap-x-1 px-1">
-            <MdOutlineLocationOn />{" "}
-            <span>Pune,Maharashtra</span>
+            <MdOutlineLocationOn /> <span>Pune,Maharashtra</span>
           </div>
         </div>
         <div className=" border  bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 flex flex-col gap-y-3 px-2 py-2 w-[230px] rounded-xl h-[190px]">

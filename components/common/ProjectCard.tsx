@@ -21,7 +21,7 @@ export function ProjectCard({ projectData }: { projectData: projectData }) {
 
       <div className="flex flex-col gap-y-2 relative z-10">
         {/* IMAGE */}
-        <div className="w-full h-[120px] border ">
+        <div className="w-full h-[120px] ">
           <Image
             src={projectData.image}
             alt={projectData.projectname}

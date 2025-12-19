@@ -201,18 +201,18 @@ export const projects = [
 
 export const education = [
   {
-    title: "SRTMUN",
+    title: "Swami Ramanand Teerth University",
     role: "Bachelor of computer application",
-    date: "Des-2024-Mar-25",
-    logo: "React.svg",
+    date: "July 20 - May-23",
+    logo: "/SRTMUN.png",
     description:
       "Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
   },
   {
-    title: "SPPU",
+    title: "Savitribai Phule Pune University",
     role: "Master of computer application",
-    date: "Des-2024-Mar-25",
-    logo: "nextjs.svg",
+    date: "Aug 23 - June-25",
+    logo: "/SPPU03.png",
     description:
       "Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
   },

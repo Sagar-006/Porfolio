@@ -26,17 +26,17 @@ export function ExperienceCard({
     <Accordion type="single" collapsible>
       <AccordionItem value={experienceData.title} className="border-none">
         {/* CARD */}
-        <Card className="overflow-hidden rounded-xl  border-dashed bg-white border text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800">
+        <Card className="overflow-hidden rounded-xl   border-dashed bg-white border text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800">
           {/* TRIGGER */}
           <AccordionTrigger className="p-0 hover:no-underline [&>svg]:ml-1">
-            <div className="flex min-h-[72px] w-full items-stretch">
+            <div className="flex h-[57px] w-full items-stretch">
               {/* LEFT STRIP */}
-              <div className="flex w-16 items-center justify-center bg-blue-100">
+              <div className="flex w-[56] h-full items-center justify-center bg-blue-100">
                 <Image
                   src={experienceData.logo}
                   alt={experienceData.title}
-                  width={28}
-                  height={28}
+                  width={40}
+                  height={40}
                   className="object-contain"
                 />
               </div>

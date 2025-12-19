@@ -12,7 +12,7 @@ export function Skills (){
           {skills.map((s, index) => (
             <Heading
               key={index}
-              className="px-3 py-1.5 text-sm bg-white border text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-700 transition-all duration-100 ease-in-out"
+              className="px-3 py-1.5 text-sm bg-white border text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-700 transition-all duration-100 ease-in-out cursor-grab"
             >
               {s.title}
             </Heading>

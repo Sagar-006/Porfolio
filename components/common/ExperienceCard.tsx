@@ -35,7 +35,7 @@ export function ExperienceCard({
                 <Image
                   src={experienceData.logo}
                   alt={experienceData.title}
-                  width={56}
+                  width={54}
                   height={40}
                   className="object-contain"
                 />

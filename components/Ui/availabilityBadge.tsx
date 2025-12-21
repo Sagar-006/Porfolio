@@ -5,6 +5,7 @@ export function AvailabilityBadge() {
         inline-flex items-center gap-2
         px-2 py-1
         rounded-lg
+        
         border border-gray-200 dark:border-gray-800
         bg-white dark:bg-black
         text-sm text-gray-700 dark:text-gray-300

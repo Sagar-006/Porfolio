@@ -315,3 +315,21 @@ export const techstack = [
   },
 ];
   
+export const quotes = [
+  {
+    title: "Hitman",
+    author: "Rohit",
+  },
+  {
+    title: "Prince",
+    author: "Gill",
+  },
+  {
+    title: "Gabbar",
+    author: "Dhawan",
+  },
+  {
+    title: "king",
+    author: "Virat",
+  },
+];

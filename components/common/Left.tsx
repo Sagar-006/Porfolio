@@ -71,7 +71,7 @@ export function Left() {
           </div>
           <div rel="noopener noreferrer">
             <Button
-              className="w-46 inline-flex gap-x-0.5  items-center"
+              className="w-46 inline-flex gap-x-0.5  items-center bg-black text-white hover:bg-gray-800 dark:bg-gray-200 dark:text-black dark:hover:bg-gray-300"
               variant={"secondary"}
               size={"lg"}
             >

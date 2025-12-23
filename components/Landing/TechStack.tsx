@@ -27,5 +27,6 @@ export function TechStack() {
         ))}
       </div>
     </Container>
+    
   );
 }

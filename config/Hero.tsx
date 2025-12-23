@@ -130,12 +130,21 @@ export const experience = [
 
 export const projects = [
   {
-    projectname: "Nex-Store",
+    projectname: "Muzer",
     image: "/images/profile.avif",
-    link: "https://github.com/Sagar-006",
-    github: "https://github.com/Sagar-006",
+    link: "https://project-6-eight-theta.vercel.app/",
+    github: "https://github.com/Sagar-006/muzer",
     description:
       "A sleek and responsive landing page designed for modern startups to showcase their products effectively.",
+    technologies: ["nextjs.svg", "tailwind.svg", "ts.svg", "postgresql.svg"],
+  },
+  {
+    projectname: "Nex-Store",
+    image: "/images/profile.avif",
+    link: "https://nex-store-fht5.onrender.com/",
+    github: "https://github.com/Sagar-006/Nex-Store-Backend",
+    description:
+      "A responsive e-commerce platform built with the MERN stack, focused on seamless product browsing and cart management.",
     technologies: [
       "React.svg",
       "tailwind.svg",
@@ -145,33 +154,18 @@ export const projects = [
     ],
   },
   {
-    projectname: "Nex-Store",
+    projectname: "Excalidraw",
     image: "/images/profile.avif",
     link: "https://github.com/Sagar-006",
-    github: "https://github.com/Sagar-006",
+    github: "https://github.com/Sagar-006/excalidraw",
     description:
-      "A sleek and responsive landing page designed for modern startups to showcase their products effectively.",
+      "A real-time collaborative drawing app built with React and WebSockets, enabling multiple users to collaborate in shared rooms.",
     technologies: [
       "React.svg",
       "tailwind.svg",
       "ts.svg",
       "nodejs-icon.svg",
-      "mongo.svg",
-    ],
-  },
-  {
-    projectname: "Nex-Store",
-    image: "/images/profile.avif",
-    link: "https://github.com/Sagar-006",
-    github: "https://github.com/Sagar-006",
-    description:
-      "A sleek and responsive landing page designed for modern startups to showcase their products effectively.",
-    technologies: [
-      "React.svg",
-      "tailwind.svg",
-      "ts.svg",
-      "nodejs-icon.svg",
-      "mongo.svg",
+      "postgresql.svg",
     ],
   },
   {
@@ -206,7 +200,7 @@ export const education = [
     date: "Aug 23 - June-25",
     logo: "/SPPU03.png",
     description:
-      "During my BCA (2020–2023), I built a strong foundation in computer applications and software development. I gained hands-on experience in programming, database management, and web technologies, which sparked my interest in full-stack development and building real-world applications.",
+      "During my MCA (2023–2025), I focused on advancing my technical skills through practical application development. I worked with modern web technologies, databases, and system design concepts, strengthening my ability to build scalable, real-world software solutions and full-stack applications.",
   },
 ];
 
@@ -290,7 +284,7 @@ export const skills = [
 
 export const techstack = [
   {
-    name: "React",
+    name: "Nextjs",
     src: "/nextjs.svg",
   },
   {
@@ -317,19 +311,24 @@ export const techstack = [
   
 export const quotes = [
   {
-    title: "Hitman",
-    author: "Rohit",
+    title: "Belive in Yourself!",
+    author: "Don't Know.",
   },
   {
-    title: "Prince",
-    author: "Gill",
+    title: "The magic your looking for is in the work you're avoiding!",
+    author: "Chris Williamson.",
   },
   {
-    title: "Gabbar",
-    author: "Dhawan",
+    title:
+      "When you're winning you're not as good as you think you're,When you're loosing you're not as bad as you think you are.",
+    author: "Naval",
   },
   {
-    title: "king",
-    author: "Virat",
+    title: "The scariest moment is always just before you start.",
+    author: "Stephen king.",
+  },
+  {
+    title: "When it fills scary to jump ,That is exactly when you jump.",
+    author: "Stephen king.",
   },
 ];

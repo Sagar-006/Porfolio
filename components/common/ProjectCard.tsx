@@ -4,7 +4,6 @@ import { Heading } from "../Ui/Heading";
 import Link from "next/link";
 import { FiLink, FiGithub } from "react-icons/fi";
 
-
 type projectData = {
   projectname: string;
   image: string;
@@ -37,15 +36,23 @@ export function ProjectCard({ projectData }: { projectData: projectData }) {
             {projectData.projectname}
           </h1>
           <div className="flex gap-x-2 mr-4">
-            <Link href={projectData.link}>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={projectData.link}
+            >
               <FiLink />
             </Link>
-            <Link href={projectData.link}>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={projectData.github}
+            >
               <FiGithub />
             </Link>
           </div>
         </div>
-        <p className="text-[16px] tracking-tight leading-tight text-gray-600">
+        <p className="text-[15px] tracking-tight  leading-tight text-gray-600">
           {projectData.description}
         </p>
 
@@ -57,7 +64,7 @@ export function ProjectCard({ projectData }: { projectData: projectData }) {
 
         {/* TECHNOLOGIES */}
         <div className="flex flex-col gap-y-2">
-          <p className="text-[14px] text-gray-600">Technologies</p>
+          <p className="text-[13px] text-gray-600">Technologies</p>
 
           <div className="flex gap-x-4">
             {projectData.technologies.map((TechIcon, index) => (

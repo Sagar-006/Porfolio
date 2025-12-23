@@ -19,10 +19,11 @@ export function Quote(){
     return (
       <Container className=" p-0 flex flex-col  gap-y-8 pt-12 text-lg ">
         <div className="flex flex-col items-center border p-2 rounded-lg text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800">
-          <p className=" text-[16px]">
-            {quote?.title}
-          </p>
-          <p className="text-[14px] ml-[420px]">{quote?.author}</p>
+          <p className=" text-[16px]">{quote?.title}</p>
+          <div className="flex flex-row mr-4 w-44 items-center gap-2 text-[14px] ml-[420px]">
+            <div className="w-6 h-px bg-black dark:bg-gray-700 text-black" />
+            <p>{quote?.author}</p>
+          </div>
         </div>
       </Container>
     );

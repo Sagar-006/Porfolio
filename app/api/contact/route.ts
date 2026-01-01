@@ -38,7 +38,13 @@ export async function POST(req:NextRequest){
           text: `Name:${name},Phone:${phone},Email:${email},Message:${message}`,
         });
 
-        return Response.json({ success: true },{status:200});
+        return Response.json(
+          {
+            success: true,
+            message: "Thanks for reaching out! I’ll contact you soon.",
+          },
+          { status: 200 }
+        );
     }catch(e){
         console.error("Email error:", error);
 

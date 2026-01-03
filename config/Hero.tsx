@@ -263,8 +263,8 @@ export const techstack: techStackItem[] = [
   },
   {
     name: "Ts",
-    light: "/Ts.png",
-    dark: "/Ts.png",
+    light: "/ts.svg",
+    dark: "/ts.svg",
   },
   {
     name: "Postgresql",

@@ -20,8 +20,8 @@ const reveal = {
 
 export function Right() {
   return (
-    <div className="flex-1">
-      <div className="min-h-screen w-[600px]">
+    <div className="flex-1 w-full">
+      <div className="min-h-screen w-full md:max-w-[600px]">
         <div className="w-full flex flex-col gap-y-4">
           <motion.section {...reveal}>
             <About />

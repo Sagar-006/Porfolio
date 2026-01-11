@@ -4,36 +4,28 @@ import { Right } from "@/components/common/Right";
 
 export default function Home() {
   return (
-    <div className="w-full bg-gray-100 md:min-h-screen text-black dark:bg-black dark:text-white">
+    <div className="w-full md:flex md:justify-center md:m-2  bg-gray-100 md:min-h-screen border  text-black dark:bg-black dark:text-white border-blue-800 ">
       <Container
         className="
-          min-h-screen
-          py-8
-          pl-18
-          flex
-          flex-col md:flex-row
-          gap-2
-          bg-gray-100
-          dark:bg-black
-          border-gray-200
-          dark:border-gray-800
+        w-full
+    md:mx-auto
+    md:max-w-4xl
+    px-4 sm:px-6
+    min-h-screen
+    py-4 md:py-8
+    flex
+    flex-col md:flex-row
+    md:gap-6
+    md:pl-16
+    border border-red-600
            
         "
       >
-        
-        <div
-          className="
-            w-[370px] h-[166px] sticky top-0
-            md:w-[230px]
-            md:sticky
-            md:top-10
-          "
-        >
+        <div className="flex-1 border border-red-600">
           <Left />
         </div>
 
-        
-        <div className="flex-1 ">
+        <div className="flex-1 border border-red-600">
           <Right />
         </div>
       </Container>

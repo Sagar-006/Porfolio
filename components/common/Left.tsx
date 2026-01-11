@@ -10,16 +10,19 @@ import { SiReaddotcv } from "react-icons/si";
 import { VscSend } from "react-icons/vsc";
 import Link from "next/link";
 import { Container } from "./Container";
+import WorldIcon from '../Ui/world-icon'
+import SendIcon from "../Ui/send-icon";
+
 
 export function Left() {
   return (
-    <Container className="w-[370px] h-[166px] ">
-      <div className=" main  rounded-2xl w-[370px] h-[166px]   md:w-[200px] md:h-[400px]  tracking-tighter leading-tight flex flex-row md:flex-col gap-y-2 items-center">
-        <div className=" first-child   bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 flex gap-x-2  md:flex-col gap-y-2.5 p-2  rounded-xl border ">
+    
+      <div className=" main  rounded-2xl w-full   md:w-50 h-auto md:h-48  tracking-tighter leading-tight flex flex-row md:flex-col gap-y-2 items-center border border-red-600 ">
+        <div className=" first-child   bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 flex gap-x-2  md:flex-col gap-y-2.5 p-3 md:p-2 rounded-xl border ">
           <div className=" text-center  w-full flex px-1">
             <Image
-              className="rounded-lg object-cover  w-[126px] h-[154px]
-      md:w-[200px] md:h-[200px]"
+              className="rounded-lg object-cover  w-28 h-full
+      md:w-[180px] md:h-[193px]"
               src={"/Profile2.jpeg"}
               alt="Profile"
               width={200}
@@ -27,7 +30,7 @@ export function Left() {
             />
           </div>
           <div className="flex flex-col gap-y-2">
-            <div>
+            <div >
               <h1 className="text-[24px] px-1 font-semibold text-shadow-amber-50 ">
                 Hello I'm <br /> <TypeAnime />
               </h1>
@@ -46,7 +49,7 @@ export function Left() {
         </div>
         <div className="hidden md:flex border bg-white dark:bg-black text-black dark:text-white border-gray-200 dark:border-gray-800 flex-col gap-y-2.5 px-2 py-2 w-full rounded-xl">
           <div className="text-sm flex items-center gap-x-1">
-            <TbWorld />
+            <WorldIcon className='w-4 h-4 '/>
             <Link href={"https://sagarb.vercel.app/"}>
               <p className="weight-">sagarb.com</p>
             </Link>
@@ -59,7 +62,7 @@ export function Left() {
             <AiOutlineMail className="shrink-0" />
             <p className="truncate">sagarbiradar7030@gmail.com</p>
           </div>
-          <div className="flex flex-col items-center  ">
+          <div className="flex flex-col items-center">
             <div>
               <Link
                 href="Sagar's.pdf"
@@ -83,7 +86,7 @@ export function Left() {
                   variant={"secondary"}
                   size={"lg"}
                 >
-                  <VscSend className="rotate-320" />
+                  <SendIcon className='' ></SendIcon>
                   Get in touch
                 </Button>
               </Link>
@@ -91,6 +94,6 @@ export function Left() {
           </div>
         </div>
       </div>
-    </Container>
+    
   );
 }

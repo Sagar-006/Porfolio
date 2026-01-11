@@ -7,7 +7,7 @@ export function Container({
 }) {
   return (
     <div
-      className={`w-full font-hanken mx-auto max-w-4xl px-2 animate-fade-in-blur ${className}`}
+      className={`w-full font-hanken  animate-fade-in-blur ${className}`}
     >
       {children}
     </div>

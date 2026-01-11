@@ -29,30 +29,29 @@ export function ExperienceCard({
         <Card className="overflow-hidden rounded-xl    border-dashed bg-white border text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800">
           {/* TRIGGER */}
           <AccordionTrigger className="p-0 hover:no-underline [&>svg]:ml-1 cursor-pointer">
-            <div className="flex h-[57px] w-full items-stretch">
+            <div className="border border-red-500 flex flex-row h-[56px] w-full items-stretch">
               {/* LEFT STRIP */}
-              <div className="flex w-[56] h-full items-center justify-center bg-blue-100">
-                <Image
-                  src={experienceData.logo}
-                  alt={experienceData.title}
-                  width={54}
-                  height={40}
-                  className="object-contain"
-                />
-              </div>
 
               {/* RIGHT CONTENT */}
-              <div className="flex flex-1 items-center justify-between px-4 py-3">
-                <div>
-                  <p className="text-[16px] font-semibold ">
+              <div className="border border-red-600 w-full h-full flex flex-1 flex-col gap-1 px-4 py-3 md:flex-row md:items-center ">
+                <div className="flex w-[48px] md:w-[56] h-full items-center justify-center bg-blue-100">
+                  <Image
+                    src={experienceData.logo}
+                    alt={experienceData.title}
+                    width={54}
+                    height={40}
+                    className="object-contain h-full w-auto"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-sm md:text-[16px] font-semibold">
                     {experienceData.title}
                   </p>
-                  <p className="text-sm ">{experienceData.role}</p>
+                  <p className="text-sm text-gray-600">{experienceData.role}</p>
                 </div>
-
-                <div className="flex items-center gap-1 text-sm text-gray-500 ">
-                  <p className="whitespace-nowrap">{experienceData.date}</p>
-                </div>
+              </div>
+              <div className="text-xs text-gray-500 md:text-sm md:whitespace-nowrap flex items-center">
+                <p>{experienceData.date}</p>
               </div>
             </div>
           </AccordionTrigger>

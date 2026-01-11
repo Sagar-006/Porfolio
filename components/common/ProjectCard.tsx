@@ -14,12 +14,11 @@ type projectData = {
 
 export function ProjectCard({ projectData }: { projectData: projectData }) {
   return (
-    <div className="relative w-[280px] h-[350px] rounded-xl p-4 border bg-white  text-black dark:bg-black dark:text-white  dark:border-gray-800 transition-transform duration-300 ease-in-out hover:scale-104 ">
+    <div className="relative w-full md:max-w-[280px] h-auto  md:mx-0 rounded-xl p-4 border bg-white  text-black dark:bg-black dark:text-white  dark:border-gray-800 transition-transform duration-200 ease-in-out hover:scale-104 ">
       
-
       <div className="flex flex-col gap-y-2 relative z-10">
         {/* IMAGE */}
-        <div className="w-full h-[120px] ">
+        <div className="w-full aspect-[16/9]">
           <Image
             src={projectData.image}
             alt={projectData.projectname}
@@ -30,11 +29,11 @@ export function ProjectCard({ projectData }: { projectData: projectData }) {
         </div>
 
         {/* TEXT */}
-        <div className="flex   items-center justify-between">
-          <h1 className="font-semibold text-[20px] ">
+        <div className="flex items-center justify-between">
+          <h1 className="font-semibold text-base md:text-[20px] ">
             {projectData.projectname}
           </h1>
-          <div className="flex gap-x-2 mr-4">
+          <div className="flex gap-x-2 ">
             <div>
               {
                 projectData.link ? <Link
@@ -55,7 +54,7 @@ export function ProjectCard({ projectData }: { projectData: projectData }) {
             </Link>
           </div>
         </div>
-        <p className="text-[15px] tracking-tight  leading-tight text-gray-600">
+        <p className="text-sm tracking-tight leading-tight text-gray-600">
           {projectData.description}
         </p>
 
@@ -69,7 +68,7 @@ export function ProjectCard({ projectData }: { projectData: projectData }) {
         <div className="flex flex-col gap-y-2">
           <p className="text-[13px] text-gray-600">Technologies</p>
 
-          <div className="flex gap-x-4">
+          <div className="flex flex-wrap gap-x-4">
             {projectData.technologies.map((TechIcon, index) => (
               <Image
                 key={index}

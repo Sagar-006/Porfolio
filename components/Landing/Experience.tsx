@@ -6,7 +6,7 @@ import { Accordion } from "../Ui/accordion";
 
 export function Experience() {
   return (
-    <Container className=" p-0 flex flex-col gap-y-8 pt-2 text-lg">
+    <div className="  flex flex-col gap-y-8 pt-2 text-base md:text-lg">
       <Heading className="px-3 border bg-gray-100  text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 py-0.5 text-sm ">
         EXPERIENCE
       </Heading>
@@ -17,6 +17,6 @@ export function Experience() {
           <ExperienceCard key={index} experienceData={m} />
         ))}
       </Accordion>
-    </Container>
+    </div>
   );
 }

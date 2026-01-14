@@ -24,9 +24,9 @@ import {ContactInfo} from '../Ui/ContactInfo'
 export function Left() {
   const [icon,setIcon] = useState<boolean>(false);
   return (
-    <div className=" main sticky top-0 md:top-6  rounded-2xl w-full   md:w-50 h-auto md:h-48  tracking-tighter leading-tight flex flex-col  md:flex-col gap-y-1 md:gap-y-2 items-center">
+    <div className=" main sticky top-0 md:top-6  rounded-2xl w-full   md:w-52 h-auto md:h-48  tracking-tighter leading-tight flex flex-col  md:flex-col gap-y-1 md:gap-y-2 items-center">
       <div className="  first-child w-full md:h-auto h-[166px]  bg-white text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800 flex   md:flex-col gap-y-2.5 p-2  md:p-2 rounded-xl  border">
-        <div className="md:h-auto min-h-[155px]   text-center  md:w-full flex px-1">
+        <div className=" md:h-auto min-h-[155px]   text-center  md:w-full flex px-1">
           <Image
             className="rounded-lg object-cover  w-full h-[155px]
       md:w-[180px] md:h-[193px]"

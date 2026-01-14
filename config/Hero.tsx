@@ -150,7 +150,7 @@ export const projects = [
 
 export const education = [
   {
-    title: "Swami Ramanand Teerth University",
+    title: "SRTMUN University",
     role: "Bachelor of computer application",
     date: "July 20 - May-23",
     logo: "/SRTMUN.png",
@@ -158,7 +158,7 @@ export const education = [
       "During my BCA (2020–2023), I built a strong foundation in computer applications and software development. I gained hands-on experience in programming, database management, and web technologies, which sparked my interest in full-stack development and building real-world applications.",
   },
   {
-    title: "Savitribai Phule Pune University",
+    title: "SPPU University",
     role: "Master of computer application",
     date: "Aug 23 - June-25",
     logo: "/SPPU03.png",

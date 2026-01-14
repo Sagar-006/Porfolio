@@ -42,7 +42,7 @@ export function ContactInfo() {
           </div>
         </div>
 
-        <div className=" flex flex-col items-center">
+        <div className=" flex flex-col  w-full items-center">
           <Link href="Sagar's.pdf" target="_blank">
             <Button size="lg">Resume / CV</Button>
           </Link>

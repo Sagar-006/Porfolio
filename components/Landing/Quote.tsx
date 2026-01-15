@@ -1,6 +1,5 @@
 'use client'
 import { quotes } from "@/config/Hero";
-import { Container } from "../common/Container";
 import { useEffect, useState } from "react";
 
 type QuoteType = {

@@ -1,11 +1,12 @@
 import Github from "@/components/svgs/Github";
 import Mail from "@/components/svgs/Mail";
 import X from "@/components/svgs/X";
-import { IoLogoGithub } from "react-icons/io";
-import { FaXTwitter } from "react-icons/fa6";
-import { IoLogoLinkedin } from "react-icons/io5";
-import { IoMail } from "react-icons/io5";
-import { FaDiscord } from "react-icons/fa";
+import TwitterXIcon from '@/components/Ui/twitter-x-icon'
+import MailFilledIcon from "@/components/Ui/mail-filled-icon";
+import LinkedinIcon from "@/components/Ui/linkedin-icon";
+import GithubIcon from "@/components/Ui/github-icon";
+import DiscordIcon from "@/components/Ui/discord-icon";
+
 
 
 export const heroConfig = {
@@ -94,7 +95,7 @@ export const experience = [
   {
     title: "Maestro Intellect",
     role: "Full-Stack-Intern",
-    date: "Jan 2025 - Apr 2025",
+    date: "Jan 25 - Apr 25",
     logo: "/Ex_logo.avif",
     description:
       "Worked on MERN stack projects involving frontend development, backend APIs, and database integration. Gained hands-on experience in building responsive web interfaces and implementing core full-stack functionalities.",
@@ -196,30 +197,30 @@ export const links = [
 export const social = [
   {
     name: "Github",
-    logo: <IoLogoGithub className="w-7 h-7 text-black dark:text-white" />,
+    logo: <GithubIcon className="w-7 h-7 text-black dark:text-white" />,
     link: "https://github.com/Sagar-006",
   },
   {
     name: "X",
-    logo: <FaXTwitter className="w-7 h-7 text-black dark:text-white" />,
+    logo: <TwitterXIcon className="w-7 h-7 text-black dark:text-white" />,
     link: "https://x.com/Mr_Sagar45",
   },
 
   {
     name: "Linkedin",
-    logo: <IoLogoLinkedin className="w-7 h-7 text-black dark:text-white" />,
+    logo: <LinkedinIcon className="w-7 h-7 text-black dark:text-white" />,
     link: "https://www.linkedin.com/in/sagarbiradar1234/",
   },
   {
     name: "G-Mail",
     logo: (
-      <IoMail className="object-cover w-7 h-7 text-black dark:text-white" />
+      <MailFilledIcon className="object-cover w-7 h-7 text-black dark:text-white" />
     ),
     link: "mailto:sagarbiradar7030@gmail.com",
   },
   {
     name: "Discord",
-    logo: <FaDiscord className="w-7 h-7 text-black dark:text-white" />,
+    logo: <DiscordIcon className="w-7 h-7 text-black dark:text-white" />,
     link: "https://github.com/Sagar-006",
   },
 ];
@@ -280,6 +281,21 @@ export const techstack: techStackItem[] = [
     name: "nodejs",
     light: "/nodejs-icon.svg",
     dark: "/nodejs-icon.svg",
+  },
+  {
+    name: "postman",
+    light: "/postman.svg",
+    dark: "/postman.svg",
+  },
+  {
+    name: "github",
+    light: "/githublight.svg",
+    dark: "/githubdark.svg",
+  },
+  {
+    name: "vscode",
+    light: "/vscode.svg",
+    dark: "/vscode.svg",
   },
 ];
   

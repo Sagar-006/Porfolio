@@ -1,12 +1,11 @@
 import { education } from "@/config/Hero";
-import { Container } from "../common/Container";
 import { Accordion } from "../Ui/accordion";
 import { Heading } from "../Ui/Heading";
 import { ExperienceCard } from "../common/ExperienceCard";
 
 export function Education(){
     return (
-      <Container className=" p-0 flex flex-col  gap-y-8 pt-2 text-lg">
+      <div className=" p-0 flex flex-col  gap-y-8 pt-2 text-lg">
         <Heading className="px-3 border bg-gray-100  text-black dark:bg-black dark:text-white border-gray-200 dark:border-gray-800  py-0.5 text-sm className='text-gray-700'">
           EDUCATION
         </Heading>
@@ -16,6 +15,6 @@ export function Education(){
             <ExperienceCard key={index} experienceData={m} />
           ))}
         </Accordion>
-      </Container>
+      </div>
     );
 }

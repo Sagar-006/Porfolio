@@ -1,4 +1,3 @@
-import { Container } from "../common/Container";
 import { Heading } from "../Ui/Heading";
 import { Accordion } from "../Ui/accordion";
 import { projects } from "@/config/Hero";

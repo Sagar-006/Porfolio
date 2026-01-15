@@ -1,24 +1,14 @@
 'use client'
 import Image from "next/image";
-import { FiSmartphone } from "react-icons/fi";
-import { AiOutlineMail } from "react-icons/ai";
-import { Button } from "../Ui/Button";
-import { TbWorld } from "react-icons/tb";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { AvailabilityBadge } from "../Ui/availabilityBadge";
 import { TypeAnime } from "./TypeAnime";
-import { SiReaddotcv } from "react-icons/si";
-import { VscSend } from "react-icons/vsc";
-import Link from "next/link";
-import { Container } from "./Container";
-import WorldIcon from '../Ui/world-icon'
-import SendIcon from "../Ui/send-icon";
 import { IoReorderThreeOutline } from "react-icons/io5";
 import {useState} from 'react'
 import { IoIosClose } from "react-icons/io";
-// import { ContactDetails } from "../Ui/ContactDetails";
 import {ContactInfo} from '../Ui/ContactInfo';
 import { AnimatedThemeTogglerDemo } from "../common/AnimatedThemerTogglerDemo";
+import {Clock} from '@/components/Ui/Clock';
 
 
 
@@ -63,8 +53,14 @@ export function Left() {
           <div className="w-[160px] md:w-full">
             <AvailabilityBadge />
           </div>
-          <div className="flex item-center text-xs md:text-sm gap-x-1 px-1">
-            <MdOutlineLocationOn /> <span>Pune,Maharashtra</span>
+          <div className="flex md:flex-col item-center text-xs md:text-sm gap-x-1 px-1">
+            <div className='flex items-center'>
+              <MdOutlineLocationOn /> <span>Pune,Maharashtra</span>
+            </div>
+            <span className='md:hidden'>|</span>
+            <div >
+              <Clock />
+            </div>
           </div>
         </div>
       </div>

@@ -2,6 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiLink, FiGithub } from "react-icons/fi";
 import { WobbleCard } from "../Ui/wobble-card";
+import GithubIcon from "@/components/Ui/github-icon";
+import LinkIcon from "@/components/Ui/link-icon";
+
+
 
 type projectData = {
   projectname: string;
@@ -15,7 +19,6 @@ type projectData = {
 export function ProjectCard({ projectData }: { projectData: projectData }) {
   return (
     <div className="relative w-full md:max-w-[280px] h-auto  md:mx-0 rounded-xl p-4 border bg-white  text-black dark:bg-black dark:text-white  dark:border-gray-800 transition-transform duration-200 ease-in-out hover:scale-104 ">
-      
       <div className="flex flex-col gap-y-2 relative z-10">
         {/* IMAGE */}
         <div className="w-full aspect-[16/9]">
@@ -33,24 +36,24 @@ export function ProjectCard({ projectData }: { projectData: projectData }) {
           <h1 className="font-semibold text-base md:text-[20px] ">
             {projectData.projectname}
           </h1>
-          <div className="flex gap-x-2 ">
+          <div className="flex items-center gap-x-2 ">
             <div>
-              {
-                projectData.link ? <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={projectData.link}
-            >
-              <FiLink />
-            </Link> : null
-              }
+              {projectData.link ? (
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={projectData.link}
+                >
+                  <LinkIcon size={20} />
+                </Link>
+              ) : null}
             </div>
             <Link
               target="_blank"
               rel="noopener noreferrer"
               href={projectData.github}
             >
-              <FiGithub />
+              <GithubIcon size={20} />
             </Link>
           </div>
         </div>

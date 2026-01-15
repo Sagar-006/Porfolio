@@ -1,5 +1,4 @@
 import { AnimatedThemeTogglerDemo } from "../common/AnimatedThemerTogglerDemo";
-import { Container } from "../common/Container";
 import { Heading } from "../Ui/Heading";
 
 export function About() {

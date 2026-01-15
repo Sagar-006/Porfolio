@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { Container } from "../common/Container";
 import { Heading } from "../Ui/Heading";
 import { techstack } from "@/config/Hero";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import {Marquee} from '@/components/Ui/marquee'
 
 export function TechStack() {
   const { resolvedTheme } = useTheme();
@@ -24,21 +24,24 @@ export function TechStack() {
         TECH STACK
       </Heading>
 
-      <div className="flex justify-between items-center">
-        {techstack.map((t, index) => (
-          <div
-            key={index}
-            className="w-10 h-10 relative flex items-center justify-center"
-          >
-            <Image
-              src={resolvedTheme === "dark" ? t.dark : t.light}
-              alt={t.name}
-              fill
-              sizes="40px"
-              className="object-contain transition-transform duration-300 ease-out hover:scale-110 cursor-grab"
-            />
-          </div>
-        ))}
+
+      <div className="">
+        <Marquee className="[--gap:3rem]">
+          {techstack.map((t, index) => (
+            <div
+              key={index}
+              className="w-10 h-10 relative flex items-center justify-center shrink-0"
+            >
+              <Image
+                src={resolvedTheme === "dark" ? t.dark : t.light}
+                alt={t.name}
+                fill
+                sizes="40px"
+                className="object-contain transition-transform duration-300 ease-out hover:scale-110 cursor-grab"
+              />
+            </div>
+          ))}
+        </Marquee>
       </div>
     </div>
   );
